@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+    
+    \usepackage{caption}
+    \usepackage{graphicx}
+    \usepackage{mathtools}
+    \usepackage{bookmark}
+    \graphicspath{ {img/} }
+    \setlength{\parindent}{0pt}
+    \DeclareCaptionType{equ}[][]
+    \usepackage[svgnames]{xcolor}
+    
+    \newcommand*{\plogo}{\fbox{$\mathcal{BM}$}}
+    
+    \usepackage{PTSerif}
+    
+    \begin{document} 
+        
+    \begin{titlepage}
+    
+        \raggedleft
+        
+        \vspace*{\baselineskip}
+        
+        {\Large Bryan Melanson}
+        
+        \vspace*{0.167\textheight}
+        
+        \textbf{\LARGE How to Not Fail}\\[\baselineskip]
+        
+        {\textcolor{Red}{\Huge Computer Architecture}}\\[\baselineskip]
+        
+        {\Large \textit{While never going to class}}
+        
+        \vfill
+        
+        {\large Computer Engineering 2020 ~~\plogo}
+        
+        \vspace*{3\baselineskip}
+    
+    \end{titlepage}
+
+    \pagebreak
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pdfbookmark[section]{\contentsname}{toc}
+    
+    \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Instruction Set Architecture}
+
+\subsection{Die Yield}
+
+        
+\begin{center}
+    \begin{equation}
+    \text{Die Yield} = (1 + (\frac{\text{Defects/Area} \cdot \text{Area of Die}}{N}))^{-N}
+    \end{equation}
+\end{center}
+
+\textbf{Die Yield} is a value which defines how likely it is that a die will be non-defective during the fabrication process. This value is a probability $< 1$, and the probability that a die will be defective is $1 - $Die Yield. \\
+
+When converting between units of area (mm$^2$, cm$^2$), be sure to repeat conversion between units twice.
+
+\begin{center}
+    1 mm$^2$ = $\frac{1}{10 \text{cm}} \cdot \frac{1}{10 \text{cm}} = \frac{1}{100}$ cm$^2$
+\end{center}
+
+\subsection{Wafer Yield}
+
+\textbf{Wafer Yield} is a value which describes how many dies (chips) can be created from a single wafer. This calculation is done using the size of a chip, and the diameter of each wafer. It takes into effect the square or rectangle shape of a chip and losses due to rounded sides of a wafer.
+
+\begin{center}
+\begin{equation} \text{Dies per wafer} = 
+    \frac{\pi \cdot (\text{Wafer Diameter}/2)^2}{\text{Die area}} - \frac{\pi \cdot \text{Wafer diameter}}{\sqrt{2 \cdot \text{Die area}}}    
+\end{equation}
+\end{center}
+
+\end{document}
