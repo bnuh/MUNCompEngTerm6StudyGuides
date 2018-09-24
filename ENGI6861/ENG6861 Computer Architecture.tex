@@ -48,7 +48,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Instruction Set Architecture}
+\section{Introduction}
 
 \subsection{Die Yield}
 
@@ -60,7 +60,6 @@
 \end{center}
 
 \textbf{Die Yield} is a value which defines how likely it is that a die will be non-defective during the fabrication process. This value is a probability $< 1$, and the probability that a die will be defective is $1 - $Die Yield. \\
-
 When converting between units of area (mm$^2$, cm$^2$), be sure to repeat conversion between units twice.
 
 \begin{center}
@@ -75,6 +74,12 @@ When converting between units of area (mm$^2$, cm$^2$), be sure to repeat conver
 \begin{equation} \text{Dies per wafer} = 
     \frac{\pi \cdot (\text{Wafer Diameter}/2)^2}{\text{Die area}} - \frac{\pi \cdot \text{Wafer diameter}}{\sqrt{2 \cdot \text{Die area}}}    
 \end{equation}
+\end{center}
+
+These values can be used to calculate the cost of each die:
+
+\begin{center}
+    Cost of die = $\frac{\text{Cost of wafer}}{\text{Dies per wafer}\cdot\text{Die yield}}$
 \end{center}
 
 \end{document}
