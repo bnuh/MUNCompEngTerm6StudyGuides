@@ -143,24 +143,62 @@ These values can be used to calculate the cost of each die:
 \subsection{Dependability}
 
 \begin{itemize}
-    \item Mean Time to Failure (MTTF)
-    \item Mean Time to Repair (MTTR)
-    \item Mean Time Between Failures (MTBF)
-    \item Availability = MTTF / MTBF
+    \item \textbf{Mean Time to Failure (MTTF)} - How long is continuous service delivered, the reciprocal is the rate of failure. One failure for every length of time.
+    \item \textbf{Mean Time to Repair (MTTR)} - How long is service interruption
+    \item\textbf{Availability = MTTF / (MTTF + MTTR)} - Service is continuous for $x$ amount of time for every $y$ length, MTTF + MTTR.
 \end{itemize}
 
 \subsection{Performance}
 
+Performance metrics can differ between computers and their purposes - WSCs will want to increase bandwidth, and mobile devices will want to increase the speed with which commands are executed. 
+
+\begin{center}
+    $\frac{\text{Execution time}_Y}{\text{Execution time}_X}$ = $n$ = $\frac{\text{Performance}_X}{\text{Performance}_Y}$
+\end{center}
+
 \subsubsection{Execution Time}
 
-\textbf{Amdahl's Law}
+\textbf{Amdahl's Law} states that the performance improvement to be gained from using some fasted mode of execution is limited by the fraction of time the faster mode can be used.
+
+\begin{center}
+    Speedup = $\frac{\text{Performance for entire task using enhancement when possible}}{\text{Performance for entire task without using the enhancement}}$
+\end{center}
+
+The speedup depends on two factors:
+
+\begin{enumerate}
+    \item The fraction of computation time in the original computer that can be converted to take advantage of the enhancement - Fraction$_{\text{enhanced}}$
+    \item How much faster the task would run if the entire program were enhanced - Speedup$_{\text{enhanced}}$
+\end{enumerate}
 
 \begin{center}
     {Exec Time}$_\text{new}$ = {Exec Time}$_\text{old}$ $\cdot$ ((1 - Fraction$_\text{enhanced}$) + $\frac{\text{Fraction}_\text{enhanced}}{\text{Speedup}_\text{enhanced}}$)
 \end{center}
 
-\subsubsection{Speedup}
+The above equation cancels in several points to be equal to 
+
+\begin{center}
+    Execution Time$_\text{old}$ $\cdot$ Old Code + Execution Time$_\text{new}$ $\cdot$ New Code
+\end{center}
+
+\begin{center}
+    {Speedup}$_\text{new}$ = $\frac{\text{Execution Time}_\text{old}}{\text{Execution Time}_\text{new}}$
+\end{center}
+
+\begin{center}
+    {Speedup}$_\text{new}$ = $\frac{1}{(1-\text{Fraction}_\text{enhanced}) + \frac{\text{Fraction}_\text{enhanced}}{\text{Speedup}_\text{enhanced}}}$
+\end{center}
 
 \subsubsection{Processor Performance Equation}
+
+\begin{center}
+    CPU Time = CPU Clock Cycles for a Program $\cdot$ Clock Cycle Time
+\end{center}
+
+Clock cycles can also be defined as $\textbf{Instruction Count} \cdot \textbf{Clock Cycle Time}$
+
+\begin{center}
+    CPU Time = Instruction Count $\cdot$ Cycles per Instruction $\cdot$ Clock Cycle Time
+\end{center}
 
 \end{document}
