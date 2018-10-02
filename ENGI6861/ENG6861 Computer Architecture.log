@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 SEP 2018 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 SEP 2018 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -385,37 +385,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-<./img/riscv_formats.png, id=58, 717.68124pt x 312.16624pt>
+<./img/riscv_formats.png, id=60, 717.68124pt x 312.16624pt>
 File: ./img/riscv_formats.png Graphic file (type png)
 <use ./img/riscv_formats.png>
 Package pdftex.def Info: ./img/riscv_formats.png  used on input line 105.
 (pdftex.def)             Requested size: 358.83974pt x 156.08273pt.
 [3 <./img/riscv_formats.png>] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
  (./ENG6861 Computer Architecture.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 206.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 8275 strings out of 492649
- 127211 string characters out of 6129622
+ 8277 strings out of 492649
+ 127226 string characters out of 6129622
  235674 words of memory out of 5000000
- 12034 multiletter control sequences out of 15000+600000
+ 12035 multiletter control sequences out of 15000+600000
  27833 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,6n,38p,550b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/paratype/ptserif_ot1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF55F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF56F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF75F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "ENG6861 Computer Architecture.pdf" (6 pages, 146222 bytes).
+Output written on "ENG6861 Computer Architecture.pdf" (6 pages, 146468 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

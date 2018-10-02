@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1538348697 "/Users/bryan/Git/MUNCompEngTerm6StudyGuides/ENGI6861/ENG6861 Computer Architecture.tex" "ENG6861 Computer Architecture.pdf" "ENG6861 Computer Architecture" 1538348697
-  "/Users/bryan/Git/MUNCompEngTerm6StudyGuides/ENGI6861/ENG6861 Computer Architecture.tex" 1538348696 8771 4c3a76e5d86eff5f3a1c6895e1077783 ""
+["pdflatex"] 1538349392 "/Users/bryan/Git/MUNCompEngTerm6StudyGuides/ENGI6861/ENG6861 Computer Architecture.tex" "ENG6861 Computer Architecture.pdf" "ENG6861 Computer Architecture" 1538349393
+  "/Users/bryan/Git/MUNCompEngTerm6StudyGuides/ENGI6861/ENG6861 Computer Architecture.tex" 1538349391 8811 255ebee0806ba34c264cb2f35cdb0ce1 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/paratype/ptserif_ot1.enc" 1480098668 2506 22f0da0720b7fcb1de5baefa1cc19181 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/paratype/ptserif/PTSerif-Bold-tlf-ot1.tfm" 1480098698 6260 261aa1134ca15131a8bfd0d17a3ebaf2 ""
@@ -84,12 +84,12 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "ENG6861 Computer Architecture.aux" 1538348697 4547 d47e67c75cdb25a156b3b43c5ed69ff8 ""
-  "ENG6861 Computer Architecture.tex" 1538348696 8771 4c3a76e5d86eff5f3a1c6895e1077783 ""
-  "ENG6861 Computer Architecture.toc" 1538348697 1525 ad0eec3875cd5bfd71fa097a1bb81dbf ""
+  "ENG6861 Computer Architecture.aux" 1538349393 4764 73bbf9fa6499ad08cb416b645578d8e8 ""
+  "ENG6861 Computer Architecture.tex" 1538349391 8811 255ebee0806ba34c264cb2f35cdb0ce1 ""
+  "ENG6861 Computer Architecture.toc" 1538349393 1608 07ad7d97f087494fc8b7cbe9efdc7132 ""
   "img/riscv_formats.png" 1538330655 52827 8c94acdb0caa04298d1e4a1436b18b1b ""
   (generated)
-  "ENG6861 Computer Architecture.pdf"
   "ENG6861 Computer Architecture.aux"
   "ENG6861 Computer Architecture.log"
   "ENG6861 Computer Architecture.toc"
+  "ENG6861 Computer Architecture.pdf"
