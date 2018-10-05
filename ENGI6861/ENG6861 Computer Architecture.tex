@@ -105,9 +105,31 @@ Computer architecture now involves specific requirementgs of the target machine,
     \includegraphics[scale=0.5]{riscv_formats}
 \end{center}
 
+The above represents the format of different binary instruction types. The values $rs2$, $rs1$, $rd$, etc. represent the binary values which will specify which registers are targetted by the instruction. Values $funct$ and $opcode$ will describe which operation to execute, and $imm$ fields will hold immediate values as arguments. 
+
 \subsection{Latency and Bandwidth}
 
+Latency and Bandwidth are valuable performance metrics. Latency is the responsiveness with which commands can be executed; the time between start and completion of an event. Bandwidth is the total work done in a given time. Bandwidth and capacity have been more valued in the past, and in general show a greater growth rate - the growth of bandwidth is generally the square of the improvement in latency.
+
 \subsection{Dynamic State Energy and Power}
+
+\textbf{Dynamic Energy} is the switching of transistors to conserve energy. This value is therefore proportional to the product of the capactive load and the square of the voltage:
+
+\begin{center}
+    Energy$_{dynamic}$ $\propto$ Capacitive Load $\cdot$ Voltage$^2$
+\end{center}
+
+This represents the energy of a pulse from 0 $\rightarrow$ 1 $\rightarrow$ 0, or vice verse, so the value of each single transition is:
+
+\begin{center}
+    Energy$_{dynamic}$ $\propto$ $\frac{1}{2}$ Capacitive Load $\cdot$ Voltage$^2$
+\end{center}
+
+And the Dynamic Power is:
+
+\begin{center}
+    Power$_{dynamic}$ $\propto$ $\frac{1}{2}$ Capacitive Load $\cdot$ Voltage$^2$ $\cdot$ Frequency Switched
+\end{center}
 
 \subsection{Die Yield}
 
@@ -202,5 +224,9 @@ Clock cycles can also be defined as $\textbf{Instruction Count} \cdot \textbf{Cl
 \end{center}
 
 \section{Instruction Set Architecture}
+
+Memory is \textbf{byte addressable} in major architecture types - all bytes have a unique address, which allows for units as small as an ASCII character to be accessed without using larger accesses and masking. \\
+
+ISA's should allow access commands for loading and writing byte, half words, and words so that units such as integers, and longs can be accessed and modified with ease. 
 
 \end{document}
