@@ -107,14 +107,14 @@ The $\phi(T)$ value can be shifted out of the $dt$ integration as a constant, le
 \subsubsection{Unit Step Function}
 
 $$u(t) = \begin{cases}
-    0, t < 0 \\
-    1, t \geq 0 
+    0, \quad t < 0 \\
+    1, \quad t \geq 0 
 \end{cases}1, t \geq 0$$
 
 \hfill \break
 $$\int_{-\infty}^{t}\delta(\tau)d\tau =  \begin{cases}
-    0, t < 0 \\
-    1, t \geq 0
+    0,\quad  t < 0 \\
+    1, \quad t \geq 0
 \end{cases} = u(t)$$
 
 This comes from the knowledge that the area under the impulse function is 1, so any scope of area that encompasses its $t$ will also be equal to 1. 
@@ -130,14 +130,21 @@ $\omega_0$ is the frequency in radians, where $\omega_0t$ is a measurement over 
 A \textbf{Rectangle Signal} $rect(\frac{t}{T})$ is a unit signal of width $T$ which is centered at $t$. $rect(\frac{t}{T})$ can be defined as:
 
 $$rect(\frac{t}{T}) = \begin{cases}
-    1, -\frac{T}{2} \leq t \leq \frac{T}{2}\\
-    0, \text{else}
+    1,\quad  -\frac{T}{2} \leq t \leq \frac{T}{2}\\
+    0, \quad \text{else}
 \end{cases}$$
 
 \subsubsection{Triangle Signal}
+A \textbf{Triangle Signal} $\Delta(\frac{t}{\tau}$) is defined as:
+
+$$\Delta(\frac{t}{\tau} = \begin{cases}
+    t,   \quad   -\frac{\tau}{2} \leq t \leq 0 \\
+    -t,   \quad  0 \leq t \leq \frac{\tau}{2} \\
+\end{cases}$$
 
 \subsection{Signal Operations}
 \subsubsection{Time Shifting}
 \subsubsection{Time Scaling}
 \subsubsection{Time Reversal}
+
 \end{document}
