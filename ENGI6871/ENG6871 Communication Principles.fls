@@ -134,10 +134,19 @@ INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/paratype/ptserif/PTSerif-Bold-tlf-ot1.tfm
 INPUT ENG6871 Communication Principles.toc
 INPUT ENG6871 Communication Principles.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 OUTPUT ENG6871 Communication Principles.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/paratype/ptserif/PTSerif-Bold-tlf-ot1.tfm
 INPUT ENG6871 Communication Principles.aux
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/paratype/ptserif_ot1.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF55F.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF56F.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF75F.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

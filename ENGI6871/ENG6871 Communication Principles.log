@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 OCT 2018 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 OCT 2018 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -360,31 +360,33 @@ LaTeX Font Info:    Font shape `OT1/PTSerif-TLF/bx/n' in size <14.4> not availab
 \tf@toc=\write3
 \openout3 = `"ENG6871 Communication Principles.toc"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+LaTeX Font Info:    Font shape `OT1/PTSerif-TLF/bx/n' in size <12> not available
+(Font)              Font shape `OT1/PTSerif-TLF/b/n' tried instead on input line 52.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 \end{document}
+l.58 \end{document}
                     [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./ENG6871 Communication Principles.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 8207 strings out of 492649
- 126353 string characters out of 6129622
+ 8216 strings out of 492649
+ 126485 string characters out of 6129622
  230674 words of memory out of 5000000
- 11997 multiletter control sequences out of 15000+600000
- 19430 words of font info for 35 fonts, out of 8000000 for 9000
+ 12004 multiletter control sequences out of 15000+600000
+ 21811 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,6n,38p,345b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/paratype/ptserif_ot1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF55F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF56F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF75F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "ENG6871 Communication Principles.pdf" (2 pages, 29950 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/paratype/ptserif_ot1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF55F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF56F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/paratype/ptserif/PTF75F.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "ENG6871 Communication Principles.pdf" (2 pages, 72771 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

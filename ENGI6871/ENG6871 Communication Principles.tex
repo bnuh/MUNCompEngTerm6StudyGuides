@@ -45,7 +45,50 @@
     \pdfbookmark[section]{\contentsname}{toc}
     
     \tableofcontents
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+
+\section{Signals and Signal Space}
+
+\subsection{Energy}
+
+\textbf{Signal Energy} $E_g$ is the energy that the voltage of $g(t)$ dissipates on a resistor. From circuits, we know that $E = V^2/R$, so for a time based signal with no theoretical $R$:
+
+$$E_g = \int^{\infty}_{-\infty}|g(t)|^2 dt$$
+
+\subsection{Power}
+
+\textbf{Signal Power} is the measure of a signal where signal energy isn't finite. For a signal that doesn't go to zero as $t \rightarrow \infty$, a time average of the energy $P_g$ can be taken over a period $T$:
+
+$$P_g = \lim_{t\to\infty} \frac{1}{T}\int_{T/2}^{-T/2} |g(t)|^2 dt$$
+
+\hfill \break 
+The square of $P_g$ is the \textbf{Root Mean Square} of value $g(t)$.
+
+\subsection{Energy and Power Signals}
+
+A signal with finite energy is an \textbf{Energy Signal}, and an signal with finite power is a \textbf{Power Signal}. In other terms, if $E_g < \infty$, or $0 < P_g < \infty$.
+
+\subsection{Unit Impulse Signal}
+
+$$\delta(t) = 0, t \neq 0$$
+$$\int^{\infty}_{-\infty}\delta(t)dt = 1$$
+\hfill \break 
+A rectangular pulse of width $\epsilon$ and height $1/\epsilon$, the \textbf{Unit Impulse} is 0 everywhere but at $t = 0$.
+
+$$\phi(t)\delta(t) = \phi(0)\delta(t)$$
+$$\phi(t)\delta(t - T) = \phi(T)\delta(t - T)$$
+
+\hfill \break
+These equations follow from the understanding that $\delta(t)$ is the only point where the impulse has a value, and likewise when shifted $T$ units. The resulting equation will only be equal to the function $\phi$ at this specific point, multiplied by $\delta$ at this point.
+
+\subsubsection{Sampling Property}
+
+From the above, it can be seen that:
+
+$$\int_{-\infty}^{\infty}\phi(t)\delta(t - T) = \phi(T)\int_{-\infty}^{\infty}\delta(t - T) dt = \phi(T)$$
+
+\hfill \break
+The $\phi(T)$ value can be shifted out of the $dt$ integration as a constant, leaving us with the result. This is known as the \textbf{Sampling} or \textbf{Sifting Property}. 
 
 \end{document}
