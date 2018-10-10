@@ -214,8 +214,53 @@ $$P_g = \sum^\infty_{n=-\infty}\abs{D_n}^2$$
 \subsubsection{Trigonometric Fourier Series}
 If the periodic $g(t)$ is \textbf{real}, we can represent it using the trigonometric FS:
 
-$$g(t) = a_0 + \sum_{n=1}^{\infty} a_n\text{cos}(n\omega_0t) + \sum_{n=-1}^{\infty} b_n\text{sin}(n\omega_0t)$$
+$$g(t) = a_0 + \sum_{n=1}^{\infty} a_n\text{cos}(n\omega_0t) + \sum_{n=-1}^{\infty} b_n\text{sin}(n\omega_0t)$$\\
+\\
+$a_0 = \frac{1}{T_0}\int_{T_0}g(t)dt$\\
+$a_n = \frac{2}{T_0}\int_{T_0}g(t)\text{cos}(n\omega_0t)dt$\\
+$b_n = \frac{2}{T_0}\int_{T_0}g(t)\text{sin}(n\omega_0t)dt$\\
+
+The power of the trigonometric FS can also be given by Parseval's Theorem 
+
+$$P_g = a_0^2 + \frac{1}{2}\sum_{n=1}^{\infty}a^2_n + \frac{1}{2}\sum_{n=1}^{\infty}b^2_n$$
+\hfill \break
+Each exponential signal can be broken down into sin and cos elements, so they are averaged for each summation to give the whole at each element $n$.
+
 \subsubsection{Compact Trigonometric Fourier Series}
+Once a signal $g(t)$ is represented as a trigonometric FS, it can be reduced into a compact form
+
+$$g(t) = c_0 + \sum_{n=1}^{\infty}c_n\text{cos}(n\omega_0t + \theta_n)$$
+
+$c_0 = a_0$ \\ \\
+$c_n = \sqrt{a_n^2 + b_n^2}$ \\ \\
+$\theta_n = \text{tan}^{-1}(\frac{-b_n}{a_n})$
+
+$$P_g = c_0^2 + \frac{1}{2}\sum_{n=1}^{\infty}c^2_n$$
+
+\subsubsection{Comparison of Trig Fourier Series}
+
+\begin{tabular}{l l}
+ $D_0 = c_0$ & $D_0 = c_0$ \\
+ $D_n = \frac{c_n}{2}e^{j\theta n}$ & $\abs{D_n} = \frac{c_n}{2}. \quad \angle D_n = \theta_n$ \\
+ $D_{-n} = \frac{c_n}{2}e^{-j\theta n}$ & $\abs{D_{-n}} = \frac{c_n}{2}, \quad \angle D_{-n} = -\theta_n$
+\end{tabular}
+\\ \\ \\
+\begin{tabular} {| l | c | c | c |}
+& g(t) & components & Fourier Spectrum \\
+Exp FS & periodic $\begin{cases}
+    \text{real} \\ 
+    \text{complex}
+\end{cases}$ & $e^{jn\omega_0t}$ & double sided $\begin{cases}
+    \abs{D_n} = \omega \\
+    \angle{D_n} = \omega 
+\end{cases} $\\
+Trig FS & real \& periodic & $\begin{cases}
+    \text{cos}(n\omega_0t)\\
+    \text{sin}(n\omega_0t)
+\end{cases}$ & $c_n = \omega$ (single sided) \\
+Compact & real \& periodic & $\text{cos}(n\omega_0t + \theta_n)$ & $\theta_n = \omega$ (single sided)
+\end{tabular}
+
 \subsection{Fourier Transform}
 \subsubsection{Properties of Fourier Transform}
 \subsubsection{Selected Fourier Transform Pairs}
