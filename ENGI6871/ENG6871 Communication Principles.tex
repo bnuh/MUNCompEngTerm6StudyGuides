@@ -379,7 +379,14 @@ $$\Psi = \abs{G(\omega)}^2$$
 $$E_g = \frac{1}{2\pi}\int^{\infty}_{-\infty}\Psi_g(\omega)d\omega$$
 
 \subsubsection{Bandwidth}
+The bandwidth represents the range of frequency $\omega$ over which a signal has energy. The full range $C$ is halved $\frac{C}{2}$ because the energy found in the negative frequency range can be ignored. Therefore, once plotted, the bandwidth can be determined as: 
 
+$$B_{rad} = \frac{C}{2} = \frac{\omega_B - (-\omega_B)}{2} \quad \text{Radians}$$
+$$B_{Hz} = \frac{B_{rad}}{2} = \frac{\omega_B - (-\omega_B)}{2} \cdot \frac{1}{2\pi} = \frac{\omega_B}{2\pi}\quad \text{Hz}$$
+\hfill \break
+For multiple non continous signals, bandwidths can be summed.
+
+\subsubsection{Time Autocorrelation}
 
 \subsubsection{Power Spectral Density (PSD)}
 \end{document}
