@@ -303,8 +303,27 @@ $\frac{dg(t)}{dt} \xRightarrow{F} j\omega G(\omega)$ \\ \\
 If $g(t) \xRightarrow{F} G(\omega)$
 \par \quad
 $g(at) \xRightarrow{F} \frac{1}{\abs{a}}G(\frac{\omega}{a})$
-
+\\ \\
+Use these in a table to quickly transform a signal to either domain.
 \subsubsection{Selected Fourier Transform Pairs}
+\textbf{Impulse} 
+\hfill \break \par \quad
+$\delta(t) \xRightarrow{F} 1$ \\ \\ 
+\textbf{Constant}
+\hfill \break \par \quad
+$A \xRightarrow{F} 2\pi A\delta(\omega)$ \\ \\
+\textbf{Sinusoid}
+\hfill \break \par \quad
+$\text{cos}\omega_0t \xRightarrow{F} \pi \delta(\omega - \omega_0) + \pi\delta(\omega + \omega_0)$
+\par \quad
+$\text{sin}\omega_0t \xRightarrow{F} \frac{\pi}{j} \delta(\omega - \omega_0) + \frac{\pi}{j}\delta(\omega + \omega_0)$ \\ \\
+\textbf{Rectangle}
+\hfill \break \par \quad
+$\text{rect}(\frac{t}{\tau} \xRightarrow{F} \tau\text{sinc}(\frac{\omega\tau}{2}))$ \\ \\
+\textbf{Periodic}
+\hfill \break \par \quad
+$g(t) = \sum_{n=-\infty}^{\infty}D_ne^{jn\omega_0t} \xRightarrow{F} G(\omega) = 2\pi \sum_{n=-\infty}^{\infty} D_n\delta(\omega-n\omega_0)$
+
 \subsection{Signal Transmission Through Linear System}
 \subsubsection{Filters}
 \subsubsection{Distortionless Transmission}
