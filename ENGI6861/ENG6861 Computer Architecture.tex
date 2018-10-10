@@ -227,6 +227,22 @@ Clock cycles can also be defined as $\textbf{Instruction Count} \cdot \textbf{Cl
 
 Memory is \textbf{byte addressable} in major architecture types - all bytes have a unique address, which allows for units as small as an ASCII character to be accessed without using larger accesses and masking. \\
 
-ISA's should allow access commands for loading and writing byte, half words, and words so that units such as integers, and longs can be accessed and modified with ease. 
+ISA's should allow access commands for loading and writing byte, half words, and words so that units such as integers, and longs can be accessed and modified with ease. \\
 
+\begin{tabular}{ l r}
+    Byte & 8 bits \\ 
+    Half Word & 16 bits \\
+    Word & 32 bits \\
+    Double Word & 64 bits
+\end{tabular}
+\\ \\
+\textbf{Little Endian} orders bytes in a larger object such that the byte ending 000 will be found at the LSB position \\ \\
+    \begin{tabular}{ c c c c c c c c }
+        7 & 6 & 5 & 4 & 3 & 2 & 1 & 0
+    \end{tabular} \\ \\ 
+\textbf{Big Endian} orders bytes so that the byte ending 000 will be located in the MSB position \\ \\
+    \begin{tabular}{ c c c c c c c c }
+        0 & 1 & 2 & 3 & 4 & 5 & 6 & 7
+    \end{tabular} \\ \\ 
+    
 \end{document}

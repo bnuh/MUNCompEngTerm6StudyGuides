@@ -262,7 +262,48 @@ Compact & real \& periodic & $\text{cos}(n\omega_0t + \theta_n)$ & $\theta_n = \
 \end{tabular}
 
 \subsection{Fourier Transform}
+
+\textbf{Fourier Transform} is used to represent finite energy signals where Fourier Series was used to represent periodic power signals.
+
+$$G(\omega) = \int_\infty^\infty g(t)e^{-jn\omega_0t}$$
+$$g(t) = \frac{1}{2\pi}\int_\infty^\infty G(\omega)e^{jn\omega_0t}$$ 
+\hfill \break
+\textbf{Note:} This is identical to the Fourier Series coefficient method for periodic signal $e^{jn\omega_0t}$ with period $T_0$ = 2$\pi$ 
+
 \subsubsection{Properties of Fourier Transform}
+
+\textbf{Linearity} 
+\hfill \break \par $\quad$ If $G_1$($\omega$) $\xRightarrow{F}$ $g_1(t)$, and $G_2$($\omega$) $\xRightarrow{F}$ $g_2(t)$ \par 
+\quad $ag_1(t) + bg_2(t) \xRightarrow{F} aG_1(\omega) + bG_2(\omega)$ \\ \\
+\textbf{Time-Shifting} 
+\hfill \break \par $\quad$ If $g(t)$ $\xRightarrow{F}$ $G(\omega)$ 
+\par \quad $g(t-t_0) \xRightarrow{F} e^{-j\omega t_0}G(\omega)$ \\ \\ 
+\textbf{Frequency-Shifting} 
+\hfill \break \par $\quad$ If $g(t)$ $\xRightarrow{F}$ $G(\omega)$ 
+\par \quad $e^{j\omega_0t} g(t)$ $\xRightarrow{F} G(\omega - \omega_0)$  \\ \\
+\textbf{Mixing with Sinusoids} 
+\hfill \break \par $\quad$ 
+If $g(t) \xRightarrow{F} G(\omega)$
+\par \quad
+$g(t)\text{cos}\omega_0t \xRightarrow{F} \frac{1}{2}G(\omega - \omega_0) + \frac{1}{2}G(\omega + \omega_0)$
+\par \quad
+Similarly, $g(t)\text{sing}\omega_0t \xRightarrow{F} \frac{1}{2j}G(\omega - \omega_0) + \frac{1}{2j}G(\omega + \omega_0)$ 
+\\ \\
+\textbf{Convolution}
+\hfill \break \par $\quad$ 
+$g_1(t) * g_2(t) \xRightarrow{F} G_1(\omega)G_2(\omega)$
+\\ \\
+\textbf{Time Differentiation}
+\hfill \break \par $\quad$
+If $g(t) \xRightarrow{F} G(\omega)$
+\par \quad
+$\frac{dg(t)}{dt} \xRightarrow{F} j\omega G(\omega)$ \\ \\ 
+\textbf{Scaling}
+\hfill \break \par $\quad$ 
+If $g(t) \xRightarrow{F} G(\omega)$
+\par \quad
+$g(at) \xRightarrow{F} \frac{1}{\abs{a}}G(\frac{\omega}{a})$
+
 \subsubsection{Selected Fourier Transform Pairs}
 \subsection{Signal Transmission Through Linear System}
 \subsubsection{Filters}
