@@ -388,5 +388,21 @@ For multiple non continous signals, bandwidths can be summed.
 
 \subsubsection{Time Autocorrelation}
 
-\subsubsection{Power Spectral Density (PSD)}
+$$\psi_g(\tau) \xRightarrow{F} \Psi_g(\omega) = \abs{G(\omega)^2}$$
+\hfill \break
+Autocorrelation is the time domain representation of the ESD.
+
+\subsubsection{ESD of a Linear System}
+For a linear system, the ESD of its output can be determined simply:
+
+$$Y(\omega) = H(\omega)G(\omega)$$
+$$\abs{Y(\omega)}^2 = \abs{H(\omega)}^2\abs{G(\omega)}^2$$
+$$\Psi_y(\omega) = \abs{Y(\omega)}^2 = \abs{H(\omega)}^2\abs{\Psi_g(\omega)}$$
+\\\
+The ESD of the output is equal to the ESD of the input time the magnitude of the frequency response squared.
+
+\subsubsection{Powexi
+
+
+r Spectral Density (PSD)}
 \end{document}
