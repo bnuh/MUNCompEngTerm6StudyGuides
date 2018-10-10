@@ -325,7 +325,37 @@ $\text{rect}(\frac{t}{\tau} \xRightarrow{F} \tau\text{sinc}(\frac{\omega\tau}{2}
 $g(t) = \sum_{n=-\infty}^{\infty}D_ne^{jn\omega_0t} \xRightarrow{F} G(\omega) = 2\pi \sum_{n=-\infty}^{\infty} D_n\delta(\omega-n\omega_0)$
 
 \subsection{Signal Transmission Through Linear System}
+
+A system response (impulse $h(t)$ or frequency response $H(\omega)$) can be used as a filter where 
+
+$$g(t) \Rightarrow h(t) \Rightarrow y(t)$$
+
+$$y(t) = g(t) * h(t) = \int_{-\infty}^{\infty}g(\tau)h(t - \tau)d\tau$$
+
+$$Y(\omega) = G(\omega)H(\omega)$$
+
+$\abs{Y(\omega)} = \abs{G(\omega)} \cdot \abs{H(\omega)}$ \\
+$\theta_y(\omega) = \theta_g(\omega) + \theta_h(\omega)$
+
 \subsubsection{Filters}
+\textbf{Low Pass Filter (LPF)} blocks the frequency above its  cutoff frequency $f_c$ \hfill \break
+\par \quad 
+$H(f) = \begin{cases}
+    0, \quad \abs{f} > \abs{f_c} \\
+    1, \quad \abs{f} < \abs{f_c}
+\end{cases}$ \\ \\ \hfill \break
+\textbf{High Pass Filter (HPF)} blocks those below its  cutoff frequency $f_c$ \hfill \break
+\par \quad 
+$H(f) = \begin{cases}
+    1, \quad \abs{f} > \abs{f_c} \\
+    0, \quad \abs{f} < \abs{f_c}
+\end{cases}$ \\ \\ \hfill \break
+\textbf{Band Pass Filter (BPF)} is a combination with two cutoff frequencies \hfill \break
+\par \quad 
+$H(f) = \begin{cases}
+    1, \quad f_{c1} < \abs{f} < f_{c2} \\
+    0, \quad \text{else}
+\end{cases}$
 \subsubsection{Distortionless Transmission}
 \subsubsection{Energy Spectral Density (ESD)}
 \subsubsection{Power Spectral Density (PSD)}
