@@ -51,7 +51,9 @@
 
 \section{Signals and Signal Space}
 
-\subsection{Energy}
+\subsection{Signal Strength}
+
+\subsubsection{Power}
 
 \textbf{Signal Energy} $E_g$ is the energy that the voltage of $g(t)$ dissipates on a resistor. From circuits, we know that $E = V^2/R$, so for a time based signal with no theoretical $R$:
 
@@ -63,7 +65,7 @@ $$E_g = \int^{\infty}_{-\infty}g(t)g^*(t) dt$$
 
 Where the orthogonal signal $g^*(t)$ indicates that all $j$ units in $g(t)$ are negative.
 
-\subsection{Power}
+\subsubsection{Power}
 
 \textbf{Signal Power} is the measure of a signal where signal energy isn't finite. For a signal that doesn't go to zero as $t \rightarrow \infty$, a time average of the energy $P_g$ can be taken over a period $T$:
 
@@ -137,14 +139,89 @@ $$rect(\frac{t}{T}) = \begin{cases}
 \subsubsection{Triangle Signal}
 A \textbf{Triangle Signal} $\Delta(\frac{t}{\tau}$) is defined as:
 
-$$\Delta(\frac{t}{\tau} = \begin{cases}
+$$\Delta(\frac{t}{\tau}) = \begin{cases}
     t,   \quad   -\frac{\tau}{2} \leq t \leq 0 \\
     -t,   \quad  0 \leq t \leq \frac{\tau}{2} \\
 \end{cases}$$
 
 \subsection{Signal Operations}
 \subsubsection{Time Shifting}
-\subsubsection{Time Scaling}
-\subsubsection{Time Reversal}
 
+When shifting a signal $g(t) \rightarrow g(t - T)$, it should be considered that at every point in $t$, the value of $g(t)$ will be the same as as what it would be at time $t - T$. In other words, a signal will be shifted to the right. For $t + T$, a signal will appear shifted to the left.
+\subsubsection{Time Scaling}
+
+When scaling a signal $g(t) \Rightarrow g(\alpha t)$ it should be considered that the value of the new signal will be whatever the signal was originally at time $\alpha t$. Therefore, when $\alpha > 1$, a signal will appear compressed by a value $\alpha$ about its point of origin. When $\alpha < 1$, it will appear lengthened. This will be centered at the point $t$, or a shifted time value.
+\subsubsection{Time Reversal}
+This will be the same as scaling, only the signal is inverted at its time of origin.
+\subsubsection{Complex Operation}
+When performing an operation which involves shifting and scaling, the function should be converted to the form $g(t)$ by removing the scaling from the signal equation. So for $g(\alpha t + T)$, the function will be $g(\alpha(t + \frac{T}{\alpha}))$. This will be the original signal $g(t)$ scaled by $\alpha$ and shifted by $\frac{1}{\alpha}$. Obey the order of operations by scaling before shifting.
+
+\subsection{System Characterization}
+
+$$x(t) \Rightarrow S \Rightarrow y(t) = S[x(t)] $$ 
+
+\textbf{Linear} \quad $S[ax_1(t) + bx_2(t)] = aS[x_1(t)] + bS[x_2(t)] = ay_1(t) = by_2(t)$ \\
+\textbf{Time-Invariant}  \quad $S[x_1(t-t_0) = y(t-t_0)])$
+
+\section{Analysis of Signals}
+
+\subsection{Fourier Series}
+For exponential signal $e^{jw_0t}$ for frequency $w_0$, some properties are:
+
+\begin{itemize}
+    \item Fundamental period $T_0 = \frac{2\pi}{w_0}$
+    \item $\abs{e^{j\omega_0t}}$ = 1
+    \item $e^{jw_0t}$ = cos($\omega_0t$) + $j$sin($\omega_0t$)
+    \item There are a set of harmonically related $\phi_k(t) = e^{jk\omega_0t}$. This $\phi_k(t)$ is orthogonal, so that
+\end{itemize}
+
+$$ \int_{T_0}\phi_n(t)\phi^*_m(t)dt = \int_{T_0}e^{jw_0t}e^{-jmw_0t}dt = \begin{cases}
+    T_0,\quad n = m \\
+    0, \quad n \neq m
+\end{cases}$$
+
+When the $m$ and $n$ values are equal, the value of $e^{jw_0t(n-m)}$ will be 1 - otherwise, it will become a combination of sin and cos signals, which sum to 0. \\ 
+
+Orthgonality can be defined as:
+
+$$\int^{t_2}_{t_1}x_1(t)x^*_2(t)dt = 0 \quad \text{or} \quad \int^{t_2}_{t_1}x^*_1(t)x_2(t)dt = 0$$
+\hfill \break
+When the signals are real, this can be generalized as:
+
+$$\int^{t_2}_{t_1}x_1(t)g(t)dt = 0$$
+
+\subsubsection{Exponential Fourier Series}
+Using these exponential signals, a signal $g(t)$ be be represented using a summation:
+
+$$g(t) = \sum_{n=-\infty}^{\infty}D_ne^{jn\omega_0t}$$
+
+$D_n$ is the \textbf{Fourier Series coefficients}
+
+$$D_n = \frac{1}{T_0}\int_{T_0}g(t)e^{-jn\omega_0t}dt$$
+
+So that:
+
+$$D_n = \frac{1}{T_0}\int_{T_0}\sum_{n=-\infty}^{\infty}D_ne^{jn\omega_0t}e^{-jn\omega_0t}dt$$
+\hfill \break
+For orthogonal signals as defined above, this will sum to $D_n$.
+\\ \\
+\textbf{Note}: If $g(t)$ is real, $D_{-n} = D^*_n$
+\subsubsection{Parseval's Theorem}
+
+The power of a periodic signal g(t) is:
+
+$$P_g = \sum^\infty_{n=-\infty}\abs{D_n}^2$$
+\subsubsection{Trigonometric Fourier Series}
+If the periodic $g(t)$ is \textbf{real}, we can represent it using the trigonometric FS:
+
+$$g(t) = a_0 + \sum_{n=1}^{\infty} a_n\text{cos}(n\omega_0t) + \sum_{n=-1}^{\infty} b_n\text{sin}(n\omega_0t)$$
+\subsubsection{Compact Trigonometric Fourier Series}
+\subsection{Fourier Transform}
+\subsubsection{Properties of Fourier Transform}
+\subsubsection{Selected Fourier Transform Pairs}
+\subsection{Signal Transmission Through Linear System}
+\subsubsection{Filters}
+\subsubsection{Distortionless Transmission}
+\subsubsection{Energy Spectral Density (ESD)}
+\subsubsection{Power Spectral Density (PSD)}
 \end{document}
