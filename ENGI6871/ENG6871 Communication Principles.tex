@@ -357,6 +357,29 @@ $H(f) = \begin{cases}
     0, \quad \text{else}
 \end{cases}$
 \subsubsection{Distortionless Transmission}
+A signal passing through a communication channel is said to be distortionless if can be scaled or delayed while maintaining its original shape. This implies a constant magnitude scale can be observed in its output, and a time shift can be separated from the original signal. \\ \\
+\textbf{Example:} $$\quad y(t) = kg(t - t_0$$
+$$Y(\omega) = kG(\omega)e^{-j\omega t_0}, \quad Y(\omega) = G(\omega)H(\omega)$$
+$$H(\omega) = ke^{-j\omega t_0}, \quad \abs{H(\omega)} = k, \quad \theta_h(\omega) = -\omega t_0$$
+\\
+From this the original $g(t)$ can be separated from the output signal and a constant scaling coefficient $\abs{H_k}$ and linear phase ($\theta_h(\omega)$) can be defined.
 \subsubsection{Energy Spectral Density (ESD)}
+From the original definition of $E_g$, the strength of an energy signal, we can incorporate Fourier Transform techniques to find another way:
+
+$$\int^{\infty}_{-\infty}\abs{g(t)}^2dt$$
+$$\int^{\infty}_{-\infty}g(t)g^*(t)dt$$
+$$\int^{\infty}_{-\infty}g(t)\frac{1}{2\pi}\int^{\infty}_{-\infty}G^*(\omega)e^{-j\omega t}dt$$
+$$\frac{1}{2\pi}\int^{\infty}_{-\infty}G^*(\omega)\int^{\infty}_{-\infty}(g(t)e^{-j\omega t}dt)d\omega$$
+$$\frac{1}{2\pi}\int^{\infty}_{-\infty}G^*(\omega)G(\omega)d\omega$$
+$$E_g = \frac{1}{2\pi}\int^{\infty}_{-\infty}\abs{G(\omega)}^2d\omega$$
+
+This inner value is the \textbf{Energy Spectral Density} (ESD) of a signal in the frequency domain. \\ 
+
+$$\Psi = \abs{G(\omega)}^2$$
+$$E_g = \frac{1}{2\pi}\int^{\infty}_{-\infty}\Psi_g(\omega)d\omega$$
+
+\subsubsection{Bandwidth}
+
+
 \subsubsection{Power Spectral Density (PSD)}
 \end{document}
